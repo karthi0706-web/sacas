@@ -1,0 +1,38 @@
+1)Opened Power BI Desktop
+Launched Power BI Desktop to start creating the report.
+
+2)Imported the Data
+Used Get Data to load the dataset from the required source (Excel/CSV/Database).
+
+3)Cleaned and Transformed Data
+Opened Power Query Editor to:
+
+4)Remove unwanted columns and rows
+
+5)Rename columns
+
+6)Fix data types
+
+7)Handle missing or duplicate values
+
+8)Loaded Data into Power BI
+After cleaning, clicked Close & Apply to load the data into the model.
+
+9)Created Relationships (if needed)
+Checked and created relationships between tables in Model View.
+
+10)Built Visualizations
+Added visuals such as:
+Bar charts
+
+11)Tables / cards
+Dragged fields into visual areas to display insights.
+
+12)Applied Filters and Slicers
+Used filters and slicers to make the report interactive.
+
+13)Formatted the Report
+Adjusted colors, titles, labels, and layout for better readability.
+
+14)Saved the Report
+Saved the file as a .pbix Power BI report.
