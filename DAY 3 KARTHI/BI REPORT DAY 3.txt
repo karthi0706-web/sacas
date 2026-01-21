@@ -1,0 +1,25 @@
+1)Open Power BI Desktop
+
+2)Clicked Get Data and loaded the dataset
+
+3)Cleaned the data using Power Query
+
+4)Clicked Close & Apply
+
+5)Created charts and visuals
+
+6)Added filters/slicers
+
+7)Formatted the report
+
+8)Saved the report
+
+QUESTIONS FOR THE CHART
+
+PREPARE A CHART SHOWING SUM OF QUANTITY BY MEMBERS TYPES AND PAYMENT METHOD
+
+PREPARE A CHART THAT SHOWS CUSTOMER ID AND FOOD NAMES
+
+PREPARE A CHART THAT SHOWS DELIVERY COUNT STATUS AND RESTRUNT TYPE
+
+PREPARE A CHART WHICH SHOWS COUNT OF APIRL SALES AND RESTRUNT NAME
