@@ -1,0 +1,30 @@
+1)Opened Power BI Desktop
+I started Power BI Desktop to create a new report.
+
+2)Imported the Data
+I clicked on Get Data and selected the required data source to load the dataset.
+
+3)Cleaned and Prepared the Data
+I used Power Query Editor to remove unwanted columns, fix data types, and correct errors.
+
+4)Applied the Changes
+After cleaning the data, I clicked Close & Apply to load it into Power BI.
+
+5)Checked Data Relationships
+I verified the relationships between tables to ensure correct analysis.
+
+6)Created Visuals
+I added charts, tables, and cards by dragging fields into the report canvas.
+
+7)Added Filters and Slicers
+I used filters and slicers to make the report interactive and easy to analyze.
+
+8)Formatted the Report
+I adjusted colors, titles, labels, and layout for better presentation.
+
+9)Saved the Report
+Finally, I saved the report as a .pbix file.
+
+the data was taken MYSQL DATABASE
+ 
+and the data name is sports tech products
