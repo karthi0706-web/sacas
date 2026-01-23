@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Power BI Style Dashboard</title>
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 15px 30px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        /* KPI Cards */
+        .kpi-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .kpi {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .kpi h3 {
+            margin: 0;
+            font-size: 14px;
+            color: gray;
+        }
+
+        .kpi h1 {
+            margin: 10px 0 0;
+            font-size: 28px;
+            color: #111827;
+        }
+
+        /* Charts */
+        .charts {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .chart-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    📊 Sales Dashboard (Power BI Style)
+</header>
+
+<div class="container">
+
+    <!-- KPI Section -->
+    <div class="kpi-row">
+        <div class="kpi">
+            <h3>Total Sales</h3>
+            <h1>₹ 1.38M</h1>
+        </div>
+        <div class="kpi">
+            <h3>Total Orders</h3>
+            <h1>2,450</h1>
+        </div>
+        <div class="kpi">
+            <h3>Customers</h3>
+            <h1>1,120</h1>
+        </div>
+        <div class="kpi">
+            <h3>Growth</h3>
+            <h1>+18.9%</h1>
+        </div>
+    </div>
+
+    <!-- Charts Section -->
+    <div class="charts">
+
+        <div class="chart-box">
+            <canvas id="lineChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+            <canvas id="barChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+            <canvas id="pieChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+            <canvas id="doughnutChart"></canvas>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    // Line Chart
+    new Chart(document.getElementById('lineChart'), {
+        type: 'line',
+        data: {
+            labels: ['Jan','Feb','Mar','Apr','May','Jun'],
+            datasets: [{
+                label: 'Monthly Sales',
+                data: [5000, 7200, 6800, 8100, 9000, 10500],
+                borderWidth: 3,
+                fill: false
+            }]
+        }
+    });
+
+    // Bar Chart
+    new Chart(document.getElementById('barChart'), {
+        type: 'bar',
+        data: {
+            labels: ['Electronics','Clothing','Grocery','Books'],
+            datasets: [{
+                label: 'Category Sales',
+                data: [45000, 32000, 28000, 15000]
+            }]
+        }
+    });
+
+    // Pie Chart
+    new Chart(document.getElementById('pieChart'), {
+        type: 'pie',
+        data: {
+            labels: ['Online','Offline'],
+            datasets: [{
+                data: [65, 35]
+            }]
+        }
+    });
+
+    // Doughnut Chart
+    new Chart(document.getElementById('doughnutChart'), {
+        type: 'doughnut',
+        data: {
+            labels: ['India','USA','UK','Other'],
+            datasets: [{
+                data: [55, 20, 15, 10]
+            }]
+        }
+    });
+</script>
+
+</body>
+</html>
